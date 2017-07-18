@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Recipes template</title>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="kartik-v-bootstrap-star-rating-a779c97/js/star-rating.js" type="text/javascript"></script>
+    <script src="woocommerce-FlexSlider-0690ec2/jquery.flexslider.js"></script>
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link href="kartik-v-bootstrap-star-rating-a779c97/css/star-rating.css" media="all" rel="stylesheet" type="text/css" />
+    <!--<link rel="stylesheet" href="woocommerce-FlexSlider-0690ec2/flexslider.css">-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="top-bar-wrap">
+            <div class="container">
+                <div class="top-bar-inner">
+                    <div class="row">
+                        <div class="top-bar-left col col-sm-6">
+                            <img class="logo" src="imgs/LogoHere.jpg" alt="logo">
+                            <i class="fa fa-phone" aria-hidden="true"></i> +34 132 322 875
+                        </div>
+                        <div class="top-bar-right col col-sm-6">
+                            <ul class="social-media-links" id="header-social">
+                                <li>
+                                    <a href="#" title="Fecebook us">
+                                    <img src="imgs/facebook.png" alt="Facebook">
+                                </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Follow us">
+                                    <img src="imgs/twitter.png" alt="Twitter">
+                                </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Youtube channel">
+                                    <img src="imgs/youtube.png" alt="Youtube">
+                                </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                        aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    <!--<a class="navbar-brand" href="#">Brand</a>-->
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse navbar-wrap" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#">Principal</a></li>
+                        <li><a href="#">Nosotros <span class="sr-only">(current)</span></a></li>
+                        <li class="active"><a href="recipes.html">Recetas</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cursos <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">One more separated link</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!--<form class="navbar-form navbar-right">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Buscar">
+                        </div>
+                        <button type="submit" class="btn btn-default">Enviar</button>
+                    </form>-->
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">Contacta</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Perfil <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
+        <div class="nav-extend not-visible-on-mobile"></div>
+    </header>
+    <div class="main">
+        <div class="subscribe-wrap">
+            <div class="container">
+                <div class="row">
+                    <div class="advertisement-msg col col-sm-10">
+                        Sé el primero en conocer nuevas noticias
+                    </div>
+                    <div class="subsribe-img-wrap col col-sm-2">
+                        <a href="#">
+                            <img src="./imgs/subscribe-btn-pascal.png" alt="subsrcibe" height="90px">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="current-recipe-wide">
+                <div class="row">
+                    <h2 class="heading center"><span>Boquerones abiertos al limón con salsa brava</span></h2>
+                    <div class="recipe-media col col-sm-8">
+                        <iframe src="https://www.youtube.com/embed/_UA8CEV9T88" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="recipe-details-wrap col col-sm-4">
+                        <ul class="recipe-details-list">
+                            <li class="recipe-detail">
+                                <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                <span>20 - 30 minutos</span>
+                            </li>
+                            <li class="recipe-detail">
+                                <i class="fa fa-user-o" aria-hidden="true"></i>
+                                <span>4</span>
+                            </li>
+                            <li class="recipe-detail">
+                                <i class="fa fa-star-o" aria-hidden="true"></i>
+                                <span>Facil</span>
+                            </li>
+                            <li class="recipe-detail">
+                                <i class="fa fa-cutlery" aria-hidden="true"></i>
+                                <span>Aperitivos</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="rating-wrap">
+                    <label for="rating-input-1" class="control-label">Valolar</label>
+                    <input id="rating-input-1" name="rating-input-1" class="rating rating-loading" data-size="xs" data-min="0" data-max="5" data-step="0.5"
+                        data-show-clear="false" data-show-caption="false">
+                </div>
+
+                <div class="row">
+                    <div class="flexslider carousel-wrap">
+                        <ul class="slides">
+                            <!--<li>
+                                    <iframe id="player_1" src="https://www.youtube.com/embed/_UA8CEV9T88" frameborder="0" allowfullscreen></iframe>
+                                </li>-->
+                            <li data-thumb="imgs/Capture-1-thumb.jpg">
+                                <img src="imgs/Capture-1.jpg" class="zoomify" />
+                            </li>
+                            <li data-thumb="imgs/Capture-2-thumb.jpg">
+                                <img src="imgs/Capture-2.jpg" class="zoomify" />
+                            </li>
+                            <li data-thumb="imgs/Capture-3-thumb.jpg">
+                                <img src="imgs/Capture-3.jpg" class="zoomify" />
+                            </li>
+                            <li data-thumb="imgs/Capture-4-thumb.jpg">
+                                <img src="imgs/Capture-4.jpg" class="zoomify" />
+                            </li>
+                            <li data-thumb="imgs/Capture-5-thumb.jpg">
+                                <img src="imgs/Capture-5.jpg" class="zoomify" />
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="shadow hidden">
+                    <div class="zoomed-img-wrap"></div>
+                </div>
+
+                <script>
+                    $(document).ready(function () {
+                        $('.flexslider').flexslider({
+                            animation: "slide",
+                            animationLoop: false,
+                            itemWidth: 210,
+                            itemMargin: 5,
+                            minItems: 2,
+                            maxItems: 4,
+                            controlNav: false
+                        });
+                    });
+
+                    $('.zoomify').on('click', function () {
+                        let imgSrc = $(this).attr('src');
+                        let imgAlt = $(this).attr('alt');
+                        let zoomedImg = $('<img>').attr('src', imgSrc)
+                            .attr('alt', imgAlt);
+                        let closeBtn = $('<span class="close-btn"><a href="#">X</a></span>');
+
+                        closeBtn.on('click', function () {
+                            $('.shadow').addClass('hidden');
+                        });
+
+                        $('.zoomed-img-wrap').empty().append(closeBtn).append(zoomedImg);
+
+                        $('.shadow').removeClass('hidden');
+
+                    });
+                </script>
+
+                <div class="products-description">
+                    <div class="products">
+                        <h4>Productos</h4>
+                        <ul class="products-list">
+                            <li class="product">Boquerones,</li>
+                            <li class="product">Limón,</li>
+                            <li class="product">Sal,</li>
+                            <li class="product">Harina,</li>
+                            <li class="product">Perejil</li>
+                        </ul>
+                        <h5 class="clear">Salsa Brava</h5>
+                        <ul class="products-list">
+                            <li class="product">Mahonesa,</li>
+                            <li class="product">Ketchup,</li>
+                            <li class="product">Brandy,</li>
+                            <li class="product">Sal,</li>
+                            <li class="product">Mostaza,</li>
+                            <li class="product">Cayena molida,</li>
+                            <li class="product">Salsa Worcester</li>
+                        </ul>
+                    </div>
+                    <div class="description-wrap">
+                        <h4 class="clear">Elaboración</h4>
+                        <div class="description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, blanditiis eaque a sed voluptatem ea earum molestiae
+                            animi esse error ut neque veniam voluptate fugiat obcaecati possimus consectetur, aperiam quae.
+                            Minus quod dolorum commodi quasi consectetur aliquid impedit blanditiis, doloremque ratione!
+                            Non consequuntur delectus possimus provident perspiciatis, dignissimos voluptatem fuga, assumenda
+                            illo soluta enim beatae odio saepe tenetur consequatur doloremque optio sint iure quibusdam.
+                            Dolores eligendi provident, consectetur esse temporibus aliquid porro voluptatem accusamus earum
+                            excepturi, a. Corporis minima nesciunt, inventore consequatur amet dolorum ut fugiat voluptates
+                            quod culpa ea dolor repudiandae nobis officiis dolores distinctio impedit, harum, repellendus
+                            ipsum, odio nemo enim! In assumenda quae quis libero eligendi aut molestias, ut similique veniam
+                            aliquam quibusdam neque earum, impedit sint.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="similar-recipes-wide">
+                <h3 class="heading center"><span>Similar</span></h3>
+                <div class="recipes">
+                    <div class="row">
+                        <div class="recipe col col-sm-4">
+                            <iframe src="https://www.youtube.com/embed/oX-TbLA-sMI" frameborder="0" allowfullscreen></iframe>
+                            <div class="similar-recipe-description-wrap">
+                                <h5><a href="#">Pollo crujiente al horno con queso fundido</a></h5>
+                                <input id="similar-recipe-1-rating" name="similar-recipe-1-rating" class="rating rating-loading" data-size="xs" data-min="0"
+                                    data-max="5" data-step="0.5" data-show-clear="false" data-show-caption="false">
+                            </div>
+                        </div>
+                        <div class="recipe col col-sm-4">
+                            <iframe src="https://www.youtube.com/embed/uxoJMnp43OA" frameborder="0" allowfullscreen></iframe>
+                            <div class="similar-recipe-description-wrap">
+                                <h5><a href="#">Espaguetis con gambas al horno</a></h5>
+                                <input id="similar-recipe-2-rating" name="similar-recipe-2-rating" class="rating rating-loading" data-size="xs" data-min="0"
+                                    data-max="5" data-step="0.5" data-show-clear="false" data-show-caption="false">
+                            </div>
+                        </div>
+                        <div class="recipe col col-sm-4">
+                            <iframe src="https://www.youtube.com/embed/KZTNb_s4CgM" frameborder="0" allowfullscreen></iframe>
+                            <div class="similar-recipe-description-wrap">
+                                <h5><a href="#">Receta Hamburguesa rellena de queso Mozzarella</a></h5>
+                                <input id="similar-recipe-3-rating" name="similar-recipe-3-rating" class="rating rating-loading" data-size="xs" data-min="0"
+                                    data-max="5" data-step="0.5" data-show-clear="false" data-show-caption="false">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+                    $(document).ready(function () {
+                        console.log("haha");
+                        //let a = $('#similar-recipe-1-rating');
+                        $('#similar-recipe-1-rating').rating({ hoverChangeStars: false });
+                        $('#similar-recipe-2-rating').rating({ hoverChangeStars: false });
+                        $('#similar-recipe-3-rating').rating({ hoverChangeStars: false });
+
+                    });
+    </script>
+
+    <div class="footer-wrap">
+        <footer class="footer">
+            <div class="container">
+                <div class="logo">
+                    <img src="imgs/LogoHere.jpg" alt="logo">
+                </div>
+                <ul class="footer-links">
+                    <li><a href="#">Principal</a></li>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Recetas</a></li>
+                </ul>
+                <div class="copyright">
+                    © 2017 All rights reserved. Food Canal
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
