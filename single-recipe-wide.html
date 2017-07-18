@@ -212,14 +212,15 @@
                             .attr('alt', imgAlt);
                         let closeBtn = $('<span class="close-btn"><a href="#">X</a></span>');
 
-                        closeBtn.on('click', function () {
+                        closeBtn.on('click', function (e) {
                             $('.shadow').addClass('hidden');
+                            e.preventDefault();
                         });
 
                         $('.zoomed-img-wrap').empty().append(closeBtn).append(zoomedImg);
 
                         $('.shadow').removeClass('hidden');
-
+                        
                     });
                 </script>
 
