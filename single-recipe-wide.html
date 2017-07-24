@@ -131,46 +131,66 @@
             </div>
         </div>
         <div class="container">
-            <div class="current-recipe-wide">
+            <div class="current-recipe">
                 <div class="row">
                     <h2 class="heading center"><span>Boquerones abiertos al limón con salsa brava</span></h2>
                     <div class="recipe-media col col-sm-8">
                         <iframe src="https://www.youtube.com/embed/_UA8CEV9T88" frameborder="0" allowfullscreen></iframe>
                     </div>
                     <div class="recipe-details-wrap col col-sm-4">
-                        <ul class="recipe-details-list">
-                            <li class="recipe-detail">
-                                <i class="fa fa-clock-o" aria-hidden="true"></i>
-                                <span>20 - 30 minutos</span>
-                            </li>
-                            <li class="recipe-detail">
-                                <i class="fa fa-user-o" aria-hidden="true"></i>
-                                <span>4</span>
-                            </li>
-                            <li class="recipe-detail">
-                                <i class="fa fa-star-o" aria-hidden="true"></i>
-                                <span>Facil</span>
-                            </li>
-                            <li class="recipe-detail">
-                                <i class="fa fa-cutlery" aria-hidden="true"></i>
-                                <span>Aperitivos</span>
-                            </li>
-                        </ul>
+                        <div class="rating-wrap">
+                            <!--<label for="rating-input-1" class="control-label">Valolar</label>-->
+                            <input id="rating-input-1" name="rating-input-1" class="rating rating-loading" data-size="xs" data-min="0" data-max="5" data-step="0.5"
+                                data-show-clear="false" data-show-caption="false">
+                        </div>
+                        <div class="description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt labore, reprehenderit impedit natus, voluptatum quasi
+                            numquam vero dolor id, ea consectetur laudantium assumenda corrupti, rem totam eveniet accusantium.
+                            Totam, ut!
+                        </div>
+                        <div class="key-words-wrap">
+                            <ul class="key-words-list">
+                                <li class="key-word"><a href="#">Palabras clave</a></li>
+                                <li class="key-word"><a href="#">Pescado</a></li>
+                                <li class="key-word"><a href="#">Limon</a></li>
+                                <li class="key-word"><a href="#">Salsa Brava</a></li>
+                                <li class="key-word"><a href="#">Alaminut</a></li>
+                                <li class="key-word"><a href="#">Salsa Brava</a></li>
+                                <li class="key-word"><a href="#">Alaminut</a></li>
+                                <li class="key-word"><a href="#">Salsa Brava</a></li>
+                                <li class="key-word"><a href="#">Alaminut</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
 
-                <div class="rating-wrap">
-                    <label for="rating-input-1" class="control-label">Valolar</label>
-                    <input id="rating-input-1" name="rating-input-1" class="rating rating-loading" data-size="xs" data-min="0" data-max="5" data-step="0.5"
-                        data-show-clear="false" data-show-caption="false">
+                <div class="row">
+                    <div class="recipe-details">
+                        <div class="recipe-detail col col-sm-3">
+                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                            <span>20 - 30 minutos</span>
+                        </div>
+                        <div class="recipe-detail col col-sm-3">
+                            <i class="fa fa-star-o" aria-hidden="true"></i>
+                            <span>Facil</span>
+                        </div>
+                        <div class="recipe-detail col col-sm-3">
+                            <i class="fa fa-user-o" aria-hidden="true"></i>
+                            <span>4</span>
+                        </div>
+                        <div class="recipe-detail last col col-sm-3">
+                            <i class="fa fa-cutlery" aria-hidden="true"></i>
+                            <span>Aperitivos</span>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="row">
+                <!--<div class="row">
                     <div class="flexslider carousel-wrap">
                         <ul class="slides">
                             <!--<li>
                                     <iframe id="player_1" src="https://www.youtube.com/embed/_UA8CEV9T88" frameborder="0" allowfullscreen></iframe>
-                                </li>-->
+                                </li>
                             <li data-thumb="imgs/Capture-1-thumb.jpg">
                                 <img src="imgs/Capture-1.jpg" class="zoomify" />
                             </li>
@@ -188,7 +208,7 @@
                             </li>
                         </ul>
                     </div>
-                </div>
+                </div>-->
                 <div class="shadow hidden">
                     <div class="zoomed-img-wrap"></div>
                 </div>
@@ -221,7 +241,7 @@
                         $('.zoomed-img-wrap').empty().append(closeBtn).append(zoomedImg);
 
                         $('.shadow').removeClass('hidden');
-                        
+
                     });
                 </script>
 
@@ -246,9 +266,9 @@
                             <li class="product">Salsa Worcester</li>
                         </ul>
                     </div>
-                    <div class="description-wrap">
+                    <div class="elaboration-wrap">
                         <h4 class="clear">Elaboración</h4>
-                        <div class="description">
+                        <div class="elaboration">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, blanditiis eaque a sed voluptatem ea earum molestiae
                             animi esse error ut neque veniam voluptate fugiat obcaecati possimus consectetur, aperiam quae.
                             Minus quod dolorum commodi quasi consectetur aliquid impedit blanditiis, doloremque ratione!

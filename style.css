@@ -19,6 +19,7 @@ button, input {
 body {
     font-family: 'Montserrat', sans-serif;
     color: #777;
+    --background: #eee;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -160,7 +161,7 @@ ul {
 
 .subscribe-wrap {
     background-color: #373737;
-    border-bottom: 3px solid #f03839;
+    border-bottom: 2px solid #d9d9d9;
     margin-bottom: 20px;
     background-image: url(./imgs/subscribe-background-darken.jpg);
     background-position: top center;
@@ -219,7 +220,7 @@ ul {
 /* Recipes Page */
 
 .heading {
-    margin: 15px 0;
+    margin: 30px 0;
 }
 
 .heading span {
@@ -361,15 +362,15 @@ input[type="search"]:focus {
     background: #c33031;
 }
 
-/* Single Recipe */
+/* Single Recipe Small*/
 
-.recipe-media iframe {
+.current-recipe-small .recipe-media iframe {
     width: 100%;
     height: 300px;
     margin-top: 15px;
 }
 
-.recipe-details-wrap {
+.current-recipe-small .recipe-details-wrap {
     margin-top: 15px;
     height: 300px;
     display: flex;
@@ -380,16 +381,16 @@ input[type="search"]:focus {
     border-top-right-radius: 50px;
 }
 
-.current-recipe .recipe-detail .fa {
+.current-recipe-small .recipe-detail .fa {
     font-size: 25px;
 }
 
-.rating-wrap {
+.current-recipe-small .rating-wrap {
     margin-top: 15px;
     font-size: 19px;
 }
 
-.current-recipe .rating-stars .star i {
+.current-recipe-small .rating-stars .star i {
     font-size: 23px !important;
 }
 
@@ -475,40 +476,40 @@ input[type="search"]:focus {
     box-shadow: inset 0px -24px 20px -15px rgba(255, 255, 255, 0.01), inset 0px 0px 10px rgba(0,0,0,0.4), 0px 0px 20px rgba(255,255,255,0.4);
 }
 
-.current-recipe .products-description {
+.current-recipe-small .products-description {
     margin-left: 5px;
 }
 
-.products-description h4, .products-description h5 {
+.current-recipe-small .products-description h4, .current-recipe-small .products-description h5 {
     color: #f03839;
 }
 
-.products {
+.current-recipe-small .products {
     margin-top: 30px;
     font-style: italic;
     font-size: 17px;
 }
 
-.products h4, .description-wrap h4 {
+.current-recipe-small .products h4, .description-wrap h4 {
     text-transform: uppercase;
     margin-bottom: 15px;
 }
 
-.products h5 {
+.current-recipe-small .products h5 {
     padding-top: 30px;
     margin-bottom: 15px;
 }
 
-.product {
+.current-recipe-small .product {
     margin-top: 10px;
 }
 
-.description-wrap {
+.current-recipe-small .description-wrap {
     margin-top: 50px;
     --text-align: justify;
 }
 
-.description {
+.current-recipe-small .description {
     font-size: 17px;
     text-indent: 10px;
     text-align: justify;
@@ -526,80 +527,136 @@ input[type="search"]:focus {
 
 /* Single Recipe Wide */
 
-.current-recipe-wide h2 {
+.current-recipe h2 {
     margin: 30px 0;
 }
 
-.current-recipe-wide iframe {
+.current-recipe iframe {
     width: 100%;
     height: 480px;
     margin-top: 15px;
 }
 
-.current-recipe-wide .recipe-details-wrap {
+.current-recipe .recipe-details-wrap {
     margin-top: 15px;
+    padding: 20px 30px;
     height: 480px;
     display: flex;
-    align-items: center;
+    --align-items: center;
     justify-content: center;
-    border: 3px solid #f03839;
-    font-size: 23px;
+    flex-direction: column;
+    border: 3px solid rgba(240, 56, 57, 0.5);
+    font-size: 17px;
     border-top-right-radius: 50px;
 }
 
-.current-recipe-wide .recipe-detail .fa {
-    font-size: 25px;
-}
-
-.current-recipe-wide .rating-wrap {
-    margin-top: 15px;
+.current-recipe .rating-wrap {  
     font-size: 23px;
 }
 
-.current-recipe-wide .rating-stars .star i {
+.current-recipe .rating-stars .star i {
     font-size: 27px !important;
 }
 
-.current-recipe-wide .products-description {
+.current-recipe .description {
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+.current-recipe .key-words-wrap {
+    height: auto;
+    margin-top: 15px;
+}
+
+.current-recipe .key-word {
+    float: left;
+}
+
+.current-recipe .key-word a {
+    display: block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    background-color: #f03839;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 13px;
+}
+
+.current-recipe .key-word a:hover {
+    background-color: #c33031;
+}
+
+.current-recipe .recipe-details {
+    margin-top: 30px;
+}
+
+.current-recipe .recipe-detail {
+    padding: 7px;
+    text-align: center;
+    border-right: 3px solid #d9d9d9;
+    cursor: pointer;
+}
+
+.current-recipe .recipe-detail.last {
+    border: none;
+}
+
+.current-recipe .recipe-detail .fa {
+    font-size: 25px;
+    color: rgba(240, 56, 57, 0.5);
+    padding-right: 5px;
+}
+
+.current-recipe .recipe-detail:hover {
+    background-color: #f03839;
+    color: #fff;
+}
+
+.current-recipe .recipe-detail:hover .fa {
+    color: #fff;
+}
+
+.current-recipe .products-description {
     margin-top: 30px;
     margin-left: 0px;
 }
 
-.current-recipe-wide .products-description h4, .current-recipe-wide .products-description h5 {
+.current-recipe .products-description h4, .current-recipe .products-description h5 {
     color: #f03839;
 }
 
-.current-recipe-wide .products {
+.current-recipe .products {
     margin-top: 0;
     font-size: 17px;
 }
 
-.current-recipe-wide .products h4, .description-wrap h4 {
+.current-recipe .products h4, .current-recipe .elaboration-wrap h4 {
     text-transform: uppercase;
     margin-bottom: 10px;
 }
 
-.current-recipe-wide .products h5 {
+.current-recipe .products h5 {
     padding-top: 30px;
     margin-bottom: 10px;
 }
 
-.current-recipe-wide .product {
+.current-recipe .product {
     float: left;
     margin-right: 15px;
     margin-top: 0px;
     font-style: italic;
 }
 
-.current-recipe-wide .description-wrap {
+.current-recipe .elaboration-wrap {
     margin-top: 0;
 }
 
-.current-recipe-wide .description-wrap h4 {
+.current-recipe .elaboration-wrap h4 {
     padding-top: 40px;
 }
 
-.current-recipe-wide .description {
+.current-recipe .elaboration {
     font-size: 17px;
     text-indent: 10px;
     text-align: justify;
