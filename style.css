@@ -617,49 +617,118 @@ input[type="search"]:focus {
     color: #fff;
 }
 
-.current-recipe .products-description {
+.current-recipe .products {
     margin-top: 30px;
     margin-left: 0px;
-}
-
-.current-recipe .products-description h4, .current-recipe .products-description h5 {
-    color: #f03839;
-}
-
-.current-recipe .products {
-    margin-top: 0;
     font-size: 17px;
 }
 
-.current-recipe .products h4, .current-recipe .elaboration-wrap h4 {
-    text-transform: uppercase;
-    margin-bottom: 10px;
+.current-recipe .products h4 {
+    margin-bottom: 15px;
 }
 
 .current-recipe .products h5 {
     padding-top: 30px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    color: #777;
+}
+
+.current-recipe .products h4, .current-recipe .elaboration-wrap h4, .comments-wrap h4 {
+    text-transform: uppercase;
+    color: #f03839;
 }
 
 .current-recipe .product {
     float: left;
     margin-right: 15px;
     margin-top: 0px;
-    font-style: italic;
 }
 
 .current-recipe .elaboration-wrap {
     margin-top: 0;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #d9d9d9;
 }
 
 .current-recipe .elaboration-wrap h4 {
     padding-top: 40px;
+    padding-bottom: 10px;
 }
 
 .current-recipe .elaboration {
     font-size: 17px;
     text-indent: 10px;
     text-align: justify;
+    margin-top: 15px;
+    padding-left: 21px;
+}
+
+.current-recipe .elaboration-step {
+    margin-bottom: 25px;
+    color: #777;
+    font-weight: 700;
+}
+
+.current-recipe .elaboration-step span {
+    color: #777;
+    font-weight: 500;
+}
+
+.comments-wrap {
+    padding-top: 30px;
+}
+
+.comments-wrap h4 {
+    margin-bottom: 15px;
+}
+
+.comments-wrap h4 .fa {
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+.comment {
+    margin-top: 30px;
+}
+
+.comment .user-wrap {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.comment .comment-img-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 124px;
+    position: relative;
+    border: 2px solid rgba(240, 56, 57, 0.5);
+    border-top-right-radius: 30px;
+    overflow: hidden;
+}
+
+.comment img {
+    width: 124px;
+}
+
+.comment .content {
+    padding-top: 15px;
+}
+
+.comment .comment-header {
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #f79b9b;
+}
+
+.comment .username {
+    font-weight: 700;
+    color: #f03839;
+    margin-bottom: 2px;
+}
+
+.comment .comment-date {
+    font-size: 12px;
 }
 
 .similar-recipes-wide {

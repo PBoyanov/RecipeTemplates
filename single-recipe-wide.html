@@ -184,103 +184,143 @@
                         </div>
                     </div>
                 </div>
-
-                <!--<div class="row">
-                    <div class="flexslider carousel-wrap">
-                        <ul class="slides">
-                            <!--<li>
-                                    <iframe id="player_1" src="https://www.youtube.com/embed/_UA8CEV9T88" frameborder="0" allowfullscreen></iframe>
-                                </li>
-                            <li data-thumb="imgs/Capture-1-thumb.jpg">
-                                <img src="imgs/Capture-1.jpg" class="zoomify" />
-                            </li>
-                            <li data-thumb="imgs/Capture-2-thumb.jpg">
-                                <img src="imgs/Capture-2.jpg" class="zoomify" />
-                            </li>
-                            <li data-thumb="imgs/Capture-3-thumb.jpg">
-                                <img src="imgs/Capture-3.jpg" class="zoomify" />
-                            </li>
-                            <li data-thumb="imgs/Capture-4-thumb.jpg">
-                                <img src="imgs/Capture-4.jpg" class="zoomify" />
-                            </li>
-                            <li data-thumb="imgs/Capture-5-thumb.jpg">
-                                <img src="imgs/Capture-5.jpg" class="zoomify" />
-                            </li>
-                        </ul>
-                    </div>
-                </div>-->
-                <div class="shadow hidden">
-                    <div class="zoomed-img-wrap"></div>
+                <div class="products">
+                    <h4>Productos</h4>
+                    <ul class="products-list">
+                        <li class="product">Boquerones,</li>
+                        <li class="product">Limón,</li>
+                        <li class="product">Sal,</li>
+                        <li class="product">Harina,</li>
+                        <li class="product">Perejil</li>
+                    </ul>
+                    <h5 class="clear">Salsa Brava</h5>
+                    <ul class="products-list">
+                        <li class="product">Mahonesa,</li>
+                        <li class="product">Ketchup,</li>
+                        <li class="product">Brandy,</li>
+                        <li class="product">Sal,</li>
+                        <li class="product">Mostaza,</li>
+                        <li class="product">Cayena molida,</li>
+                        <li class="product">Salsa Worcester</li>
+                    </ul>
                 </div>
-
-                <script>
-                    $(document).ready(function () {
-                        $('.flexslider').flexslider({
-                            animation: "slide",
-                            animationLoop: false,
-                            itemWidth: 210,
-                            itemMargin: 5,
-                            minItems: 2,
-                            maxItems: 4,
-                            controlNav: false
-                        });
-                    });
-
-                    $('.zoomify').on('click', function () {
-                        let imgSrc = $(this).attr('src');
-                        let imgAlt = $(this).attr('alt');
-                        let zoomedImg = $('<img>').attr('src', imgSrc)
-                            .attr('alt', imgAlt);
-                        let closeBtn = $('<span class="close-btn"><a href="#">X</a></span>');
-
-                        closeBtn.on('click', function (e) {
-                            $('.shadow').addClass('hidden');
-                            e.preventDefault();
-                        });
-
-                        $('.zoomed-img-wrap').empty().append(closeBtn).append(zoomedImg);
-
-                        $('.shadow').removeClass('hidden');
-
-                    });
-                </script>
-
-                <div class="products-description">
-                    <div class="products">
-                        <h4>Productos</h4>
-                        <ul class="products-list">
-                            <li class="product">Boquerones,</li>
-                            <li class="product">Limón,</li>
-                            <li class="product">Sal,</li>
-                            <li class="product">Harina,</li>
-                            <li class="product">Perejil</li>
-                        </ul>
-                        <h5 class="clear">Salsa Brava</h5>
-                        <ul class="products-list">
-                            <li class="product">Mahonesa,</li>
-                            <li class="product">Ketchup,</li>
-                            <li class="product">Brandy,</li>
-                            <li class="product">Sal,</li>
-                            <li class="product">Mostaza,</li>
-                            <li class="product">Cayena molida,</li>
-                            <li class="product">Salsa Worcester</li>
-                        </ul>
-                    </div>
-                    <div class="elaboration-wrap">
-                        <h4 class="clear">Elaboración</h4>
-                        <div class="elaboration">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, blanditiis eaque a sed voluptatem ea earum molestiae
-                            animi esse error ut neque veniam voluptate fugiat obcaecati possimus consectetur, aperiam quae.
-                            Minus quod dolorum commodi quasi consectetur aliquid impedit blanditiis, doloremque ratione!
-                            Non consequuntur delectus possimus provident perspiciatis, dignissimos voluptatem fuga, assumenda
-                            illo soluta enim beatae odio saepe tenetur consequatur doloremque optio sint iure quibusdam.
-                            Dolores eligendi provident, consectetur esse temporibus aliquid porro voluptatem accusamus earum
-                            excepturi, a. Corporis minima nesciunt, inventore consequatur amet dolorum ut fugiat voluptates
-                            quod culpa ea dolor repudiandae nobis officiis dolores distinctio impedit, harum, repellendus
-                            ipsum, odio nemo enim! In assumenda quae quis libero eligendi aut molestias, ut similique veniam
-                            aliquam quibusdam neque earum, impedit sint.
+                <div class="elaboration-wrap">
+                    <h4 class="clear">Elaboración</h4>
+                    <div class="row">
+                        <div class="flexslider carousel-wrap">
+                            <ul class="slides">
+                                <!--<li>
+                                    <iframe id="player_1" src="https://www.youtube.com/embed/_UA8CEV9T88" frameborder="0" allowfullscreen></iframe>
+                                </li>-->
+                                <li data-thumb="imgs/Capture-1-thumb.jpg">
+                                    <img src="imgs/Capture-1.jpg" class="zoomify" title="Paso 1" alt="paso_1" />
+                                </li>
+                                <li data-thumb="imgs/Capture-2-thumb.jpg">
+                                    <img src="imgs/Capture-2.jpg" class="zoomify" title="Paso 2" alt="paso_2" />
+                                </li>
+                                <li data-thumb="imgs/Capture-3-thumb.jpg">
+                                    <img src="imgs/Capture-3.jpg" class="zoomify" title="Paso 3" alt="paso_3" />
+                                </li>
+                                <li data-thumb="imgs/Capture-4-thumb.jpg">
+                                    <img src="imgs/Capture-4.jpg" class="zoomify" title="Paso 4" alt="paso_4" />
+                                </li>
+                                <li data-thumb="imgs/Capture-5-thumb.jpg">
+                                    <img src="imgs/Capture-5.jpg" class="zoomify" title="Paso 5" alt="paso_5" />
+                                </li>
+                            </ul>
                         </div>
                     </div>
+                    <div class="shadow hidden">
+                        <div class="zoomed-img-wrap"></div>
+                    </div>
+
+                    <script>
+                        $(document).ready(function () {
+                            $('.flexslider').flexslider({
+                                animation: "slide",
+                                animationLoop: false,
+                                itemWidth: 210,
+                                itemMargin: 5,
+                                minItems: 2,
+                                maxItems: 4,
+                                controlNav: false
+                            });
+                        });
+
+                        $('.zoomify').on('click', function () {
+                            let imgSrc = $(this).attr('src');
+                            let imgAlt = $(this).attr('alt');
+                            let zoomedImg = $('<img>').attr('src', imgSrc)
+                                .attr('alt', imgAlt);
+                            let closeBtn = $('<span class="close-btn"><a href="#">X</a></span>');
+
+                            closeBtn.on('click', function (e) {
+                                $('.shadow').addClass('hidden');
+                                e.preventDefault();
+                            });
+
+                            $('.zoomed-img-wrap').empty().append(closeBtn).append(zoomedImg);
+
+                            $('.shadow').removeClass('hidden');
+
+                        });
+                    </script>
+                    <div class="elaboration">
+                        <ol class="elaboration-steps">
+                            <li class="elaboration-step"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt rerum, quidem quibusdam.</span></li>
+                            <li class="elaboration-step"><span>Quae minima ut earum. Eius dolore eos aspernatur amet ducimus cupiditate? Dolorem.</span></li>
+                            <li class="elaboration-step"><span>Eum nostrum nobis, maiores itaque, provident beatae! Suscipit dolor velit illo qui?</span></li>
+                            <li class="elaboration-step"><span>Temporibus voluptates reiciendis distinctio ipsum esse quos voluptate consequuntur cum quod!
+                                Quaerat.</span></li>
+                            <li class="elaboration-step"><span>Aut ab alias soluta, perferendis nulla at ad distinctio nihil a totam. Alias suscipit sit, mollitia
+                                aut iste incidunt eos accusantium ut explicabo? Ipsam soluta dolorum perferendis aperiam
+                                molestias porro ipsa illum, earum eligendi!</span></li>
+                            <li class="elaboration-step"><span>Error beatae aliquid illum voluptatibus eligendi quos totam, distinctio, velit eaque repudiandae.</span></li>
+                            <li class="elaboration-step"><span>Modi eos praesentium quaerat eaque repudiandae quis ut fugiat quod in reiciendis?</span></li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="comments-wrap">
+                    <h4><i class="fa fa-comments-o" aria-hidden="true"></i> Comentarios <span class="comment-number">(2)</span></h4>
+                    <ul class="comments">
+                        <li class="comment">
+                            <div class="comment-wrap">
+                                <div class="row">
+                                    <div class="user-wrap col col-sm-2">
+                                        <div class="comment-img-wrap">
+                                            <img src="./imgs/comments-user.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="content col col-sm-10">
+                                        <div class="comment-header">
+                                            <div class="username">Nombre de usuario</div>
+                                            <div class="comment-date">26 julio 2017 a 15:53</div>
+                                        </div>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati excepturi error ipsa porro, expedita qui et, asperiores
+                                        ipsam quasi, vero ea nisi! Eum, laborum animi quisquam magnam similique optio repellat?
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="comment">
+                            <div class="comment-wrap">
+                                <div class="row">
+                                    <div class="user-wrap col col-sm-2">
+                                        <div class="comment-img-wrap">
+                                            <img src="./imgs/user-photo.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="content col col-sm-10">
+                                        <div class="comment-header">
+                                            <div class="username">Nombre de usuario</div>
+                                            <div class="comment-date">27 julio 2017 a 13:59</div>
+                                        </div>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat repudiandae accusamus, corporis!
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <div class="similar-recipes-wide">
@@ -318,14 +358,14 @@
     </div>
 
     <script>
-                    $(document).ready(function () {
-                        console.log("haha");
-                        //let a = $('#similar-recipe-1-rating');
-                        $('#similar-recipe-1-rating').rating({ hoverChangeStars: false });
-                        $('#similar-recipe-2-rating').rating({ hoverChangeStars: false });
-                        $('#similar-recipe-3-rating').rating({ hoverChangeStars: false });
+                        $(document).ready(function () {
+                            console.log("haha");
+                            //let a = $('#similar-recipe-1-rating');
+                            $('#similar-recipe-1-rating').rating({ hoverChangeStars: false });
+                            $('#similar-recipe-2-rating').rating({ hoverChangeStars: false });
+                            $('#similar-recipe-3-rating').rating({ hoverChangeStars: false });
 
-                    });
+                        });
     </script>
 
     <div class="footer-wrap">
