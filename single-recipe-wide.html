@@ -155,10 +155,10 @@
                                 <li class="key-word"><a href="#">Limon</a></li>
                                 <li class="key-word"><a href="#">Salsa Brava</a></li>
                                 <li class="key-word"><a href="#">Alaminut</a></li>
-                                <li class="key-word"><a href="#">Salsa Brava</a></li>
-                                <li class="key-word"><a href="#">Alaminut</a></li>
-                                <li class="key-word"><a href="#">Salsa Brava</a></li>
-                                <li class="key-word"><a href="#">Alaminut</a></li>
+                                <li class="key-word"><a href="#">Amarillo</a></li>
+                                <li class="key-word"><a href="#">Mahonesa</a></li>
+                                <li class="key-word"><a href="#">Harina</a></li>
+                                <li class="key-word"><a href="#">Perejil</a></li>
                             </ul>
                         </div>
                     </div>
@@ -282,18 +282,26 @@
                 </div>
                 <div class="comments-wrap">
                     <h4><i class="fa fa-comments-o" aria-hidden="true"></i> Comentarios <span class="comment-number">(2)</span></h4>
+                    <div class="row">
+                            <div class="comment-input col col-sm-10 col-sm-offset-2">
+                                <textarea class="simplebox" name="" id="" cols="" rows="8" placeholder="Escribe un comentario"></textarea>
+                                <a class="btn-basic btn-comment" href="#">Puesto</a>
+                            </div>
+                    </div>                  
                     <ul class="comments">
                         <li class="comment">
                             <div class="comment-wrap">
                                 <div class="row">
                                     <div class="user-wrap col col-sm-2">
                                         <div class="comment-img-wrap">
-                                            <img src="./imgs/comments-user.png" alt="">
+                                            <a href="#">
+                                                <img src="./imgs/comments-user.png" alt="">
+                                            </a>
                                         </div>
                                     </div>
                                     <div class="content col col-sm-10">
                                         <div class="comment-header">
-                                            <div class="username">Nombre de usuario</div>
+                                            <div class="username"><a href="#">Nombre de usuario</a></div>
                                             <div class="comment-date">26 julio 2017 a 15:53</div>
                                         </div>
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati excepturi error ipsa porro, expedita qui et, asperiores
@@ -307,12 +315,14 @@
                                 <div class="row">
                                     <div class="user-wrap col col-sm-2">
                                         <div class="comment-img-wrap">
-                                            <img src="./imgs/user-photo.jpg" alt="">
+                                            <a href="#">
+                                                <img src="./imgs/user-photo.jpg" alt="">
+                                            </a>
                                         </div>
                                     </div>
                                     <div class="content col col-sm-10">
                                         <div class="comment-header">
-                                            <div class="username">Nombre de usuario</div>
+                                            <div class="username"><a href="#">Nombre de usuario</a></div>
                                             <div class="comment-date">27 julio 2017 a 13:59</div>
                                         </div>
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat repudiandae accusamus, corporis!
@@ -328,7 +338,9 @@
                 <div class="recipes">
                     <div class="row">
                         <div class="recipe col col-sm-4">
-                            <iframe src="https://www.youtube.com/embed/oX-TbLA-sMI" frameborder="0" allowfullscreen></iframe>
+                            <div class="recipe-media-wrap">
+                                <iframe src="https://www.youtube.com/embed/oX-TbLA-sMI" frameborder="0" allowfullscreen></iframe>
+                            </div>
                             <div class="similar-recipe-description-wrap">
                                 <h5><a href="#">Pollo crujiente al horno con queso fundido</a></h5>
                                 <input id="similar-recipe-1-rating" name="similar-recipe-1-rating" class="rating rating-loading" data-size="xs" data-min="0"
@@ -336,15 +348,21 @@
                             </div>
                         </div>
                         <div class="recipe col col-sm-4">
-                            <iframe src="https://www.youtube.com/embed/uxoJMnp43OA" frameborder="0" allowfullscreen></iframe>
+                            <div class="recipe-media-wrap">
+                                <a href="#" class="darken">
+                                    <img src="./imgs/Capture-7.jpg" alt="subsrcibe">
+                                </a>
+                            </div>
                             <div class="similar-recipe-description-wrap">
-                                <h5><a href="#">Espaguetis con gambas al horno</a></h5>
+                                <h5><a href="#">Sincronizada de Soja Texturizada comida Mejicana</a></h5>
                                 <input id="similar-recipe-2-rating" name="similar-recipe-2-rating" class="rating rating-loading" data-size="xs" data-min="0"
                                     data-max="5" data-step="0.5" data-show-clear="false" data-show-caption="false">
                             </div>
                         </div>
                         <div class="recipe col col-sm-4">
-                            <iframe src="https://www.youtube.com/embed/KZTNb_s4CgM" frameborder="0" allowfullscreen></iframe>
+                            <div class="recipe-media-wrap">
+                                <iframe src="https://www.youtube.com/embed/KZTNb_s4CgM" frameborder="0" allowfullscreen></iframe>
+                            </div>
                             <div class="similar-recipe-description-wrap">
                                 <h5><a href="#">Receta Hamburguesa rellena de queso Mozzarella</a></h5>
                                 <input id="similar-recipe-3-rating" name="similar-recipe-3-rating" class="rating rating-loading" data-size="xs" data-min="0"

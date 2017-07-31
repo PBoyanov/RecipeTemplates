@@ -579,7 +579,7 @@ input[type="search"]:focus {
     padding: 5px 10px;
     background-color: #f03839;
     color: #fff;
-    border-radius: 3px;
+    --border-top-right-radius: 7px;
     font-size: 13px;
 }
 
@@ -684,7 +684,27 @@ input[type="search"]:focus {
 
 .comments-wrap h4 .fa {
     font-size: 25px;
-    margin-right: 10px;
+    margin-right: 5px;
+}
+
+.comment-input {
+    margin-top: 15px;
+}
+
+.comment-input textarea {
+    width:100%;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.btn-comment {
+    background-color: #777;
+    margin-top: 10px;
+    box-shadow: 0 1px 1px #d3d3d3;
+}
+
+.btn-comment:hover {
+    background-color: rgba(240, 56, 57, 0.5);
 }
 
 .comment {
@@ -723,8 +743,12 @@ input[type="search"]:focus {
 
 .comment .username {
     font-weight: 700;
-    color: #f03839;
+    color: #333;
     margin-bottom: 2px;
+}
+
+.comment .username a:hover, .comment .username a:focus {
+    color: #ea1616;
 }
 
 .comment .comment-date {
