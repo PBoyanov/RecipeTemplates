@@ -401,7 +401,7 @@ input[type="search"]:focus {
     position: relative;
 }
 
-.flexslider li img {
+.flexslider li img, .flexslider li iframe {
     width: 100%;
     cursor: pointer;
 }
@@ -425,18 +425,30 @@ input[type="search"]:focus {
     background: url("./imgs/home-carousel-arrow-right-3.png") center center no-repeat;
 }
 
-.shadow {
+.fancybox-slide--iframe .fancybox-content {
+	width  : 854px;
+	height : 436px;
+	max-width  : 80%;
+	max-height : 80%;
+	margin: 0;
+}
+
+/*.shadow {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     z-index: 1500;
-    background: rgba(0, 0, 0 , .3);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    background: rgba(0, 0, 0 , 0.3);   */
+    --display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    --display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    --display: -ms-flexbox;      /* TWEENER - IE 10 */
+    --display: -webkit-flex;     /* NEW - Chrome */ 
+    --display: flex;
+    --justify-content: center;
+    --align-items: center;
+/*}
 
 .zoomed-img-wrap {
     position: absolute;
@@ -445,6 +457,8 @@ input[type="search"]:focus {
     --border: 1px solid #f03839;
     border-radius: 7px; 
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+    top: 10%;
+    left: 19%;
 }
 
 .zoomed-img-wrap img {
@@ -474,7 +488,7 @@ input[type="search"]:focus {
 
 .zoomed-img-wrap .close-btn a:hover {
     box-shadow: inset 0px -24px 20px -15px rgba(255, 255, 255, 0.01), inset 0px 0px 10px rgba(0,0,0,0.4), 0px 0px 20px rgba(255,255,255,0.4);
-}
+}*/
 
 .current-recipe-small .products-description {
     margin-left: 5px;
@@ -531,7 +545,7 @@ input[type="search"]:focus {
     margin: 30px 0;
 }
 
-.current-recipe iframe {
+.current-recipe .recipe-media iframe, .current-recipe .recipe-media img {
     width: 100%;
     height: 480px;
     margin-top: 15px;
@@ -698,13 +712,13 @@ input[type="search"]:focus {
 }
 
 .btn-comment {
-    background-color: #777;
+    background-color: #f03839;
     margin-top: 10px;
     box-shadow: 0 1px 1px #d3d3d3;
 }
 
 .btn-comment:hover {
-    background-color: rgba(240, 56, 57, 0.5);
+    background-color: #c33031;
 }
 
 .comment {

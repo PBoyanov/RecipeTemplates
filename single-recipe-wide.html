@@ -6,20 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Recipes template</title>
+    <title>Single recipe template</title>
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
         crossorigin="anonymous"></script>
-    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js" type="text/javascript"></script>
     <script src="kartik-v-bootstrap-star-rating-a779c97/js/star-rating.js" type="text/javascript"></script>
-    <script src="woocommerce-FlexSlider-0690ec2/jquery.flexslider.js"></script>
+    <script src="woocommerce-FlexSlider-0690ec2/jquery.flexslider.js" type="text/javascript"></script>
+    <script src="fancybox-3/dist/jquery.fancybox.min.js" type="text/javascript"></script>
 
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
         crossorigin="anonymous">
     <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
-    <link href="kartik-v-bootstrap-star-rating-a779c97/css/star-rating.css" media="all" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="kartik-v-bootstrap-star-rating-a779c97/css/star-rating.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="./fancybox-3/dist/jquery.fancybox.min.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 
 <body>
@@ -136,6 +138,7 @@
                     <h2 class="heading center"><span>Boquerones abiertos al limón con salsa brava</span></h2>
                     <div class="recipe-media col col-sm-8">
                         <iframe src="https://www.youtube.com/embed/_UA8CEV9T88" frameborder="0" allowfullscreen></iframe>
+                        <!--<img src="./imgs/Capture-6.jpg" alt="subsrcibe">-->
                     </div>
                     <div class="recipe-details-wrap col col-sm-4">
                         <div class="rating-wrap">
@@ -209,61 +212,107 @@
                     <div class="row">
                         <div class="flexslider carousel-wrap">
                             <ul class="slides">
-                                <!--<li>
-                                    <iframe id="player_1" src="https://www.youtube.com/embed/_UA8CEV9T88" frameborder="0" allowfullscreen></iframe>
-                                </li>-->
-                                <li data-thumb="imgs/Capture-1-thumb.jpg">
-                                    <img src="imgs/Capture-1.jpg" class="zoomify" title="Paso 1" alt="paso_1" />
+                                <li>
+                                    <a class="elaboration-media" data-fancybox="gallery" data-type="iframe" data-src="https://www.youtube.com/embed/_UA8CEV9T88?autoplay=1">
+                                        <img src="imgs/Capture-8.jpg" title="Video 1" alt="video_1" />
+                                    </a>
                                 </li>
-                                <li data-thumb="imgs/Capture-2-thumb.jpg">
-                                    <img src="imgs/Capture-2.jpg" class="zoomify" title="Paso 2" alt="paso_2" />
+                                <li>
+                                    <a class="elaboration-media" data-fancybox="gallery" href="imgs/Capture-1.jpg">
+                                        <img src="imgs/Capture-1.jpg" title="Paso 1" alt="paso_1" />
+                                    </a>
                                 </li>
-                                <li data-thumb="imgs/Capture-3-thumb.jpg">
-                                    <img src="imgs/Capture-3.jpg" class="zoomify" title="Paso 3" alt="paso_3" />
+                                <li>
+                                    <a class="elaboration-media" data-fancybox="gallery" href="imgs/Capture-2.jpg">
+                                        <img src="imgs/Capture-2.jpg" title="Paso 2" alt="paso_2" />
+                                    </a>
                                 </li>
-                                <li data-thumb="imgs/Capture-4-thumb.jpg">
-                                    <img src="imgs/Capture-4.jpg" class="zoomify" title="Paso 4" alt="paso_4" />
+                                <li>
+                                    <a class="elaboration-media" data-fancybox="gallery" href="imgs/Capture-3.jpg">
+                                        <img src="imgs/Capture-3.jpg" title="Paso 3" alt="paso_3" />
+                                    </a>
                                 </li>
-                                <li data-thumb="imgs/Capture-5-thumb.jpg">
-                                    <img src="imgs/Capture-5.jpg" class="zoomify" title="Paso 5" alt="paso_5" />
+                                <li>
+                                    <a class="elaboration-media" data-fancybox="gallery" href="imgs/Capture-4.jpg">
+                                        <img src="imgs/Capture-4.jpg" title="Paso 4" alt="paso_4" />
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="elaboration-media" data-fancybox="gallery" href="imgs/Capture-5.jpg">
+                                        <img src="imgs/Capture-5.jpg" title="Paso 5" alt="paso_5" />
+                                    </a>
                                 </li>
                             </ul>
                         </div>
                     </div>
-                    <div class="shadow hidden">
+                    <!--<div class="shadow hidden">
                         <div class="zoomed-img-wrap"></div>
-                    </div>
+                    </div>-->
 
                     <script>
                         $(document).ready(function () {
                             $('.flexslider').flexslider({
                                 animation: "slide",
-                                animationLoop: false,
+                                animationLoop: true,
+                                slideshow: false,
+                                // slideshowSpeed: 4000,
+                                // pauseOnHover: true,
                                 itemWidth: 210,
                                 itemMargin: 5,
                                 minItems: 2,
                                 maxItems: 4,
-                                controlNav: false
+                                controlNav: false,
+                                video: true
+                            });
+
+                            //Fancybox - zoom images
+
+                            $("a.elaboration-media").fancybox({
+                                'transitionIn': 'elastic',
+                                'transitionOut': 'elastic',
+                                'speedIn': 600,
+                                'speedOut': 200,
+                                'overlayShow': false,
+                                'loop': true
                             });
                         });
 
-                        $('.zoomify').on('click', function () {
-                            let imgSrc = $(this).attr('src');
-                            let imgAlt = $(this).attr('alt');
-                            let zoomedImg = $('<img>').attr('src', imgSrc)
-                                .attr('alt', imgAlt);
-                            let closeBtn = $('<span class="close-btn"><a href="#">X</a></span>');
 
-                            closeBtn.on('click', function (e) {
-                                $('.shadow').addClass('hidden');
-                                e.preventDefault();
-                            });
 
-                            $('.zoomed-img-wrap').empty().append(closeBtn).append(zoomedImg);
+                        // $('.zoomify').on('click', function () {
+                        //     let imgSrc = $(this).attr('src');
+                        //     let imgAlt = $(this).attr('alt');
+                        //     let zoomedImg = $('<img>').attr('src', imgSrc)
+                        //         .attr('alt', imgAlt);
+                        //     let closeBtn = $('<span class="close-btn"><a href="#">X</a></span>');
 
-                            $('.shadow').removeClass('hidden');
+                        //     closeBtn.on('click', function (e) {
+                        //         $('.shadow').addClass('hidden');
+                        //         e.preventDefault();
+                        //     });
 
-                        });
+                        //     $('.zoomed-img-wrap').empty().append(closeBtn).append(zoomedImg);
+
+                        //     $('.shadow').removeClass('hidden');
+
+                        // });
+
+                        // Get a reference to the iframe document
+                        // let iframeDoc = $('#player_1').contents().get(0);
+
+                        // $(iframeDoc).bind('click', function( event ) {
+                        //     let video = iframeDoc.css({"width": 400, "height": 300});
+                        //     let closeBtn = $('<span class="close-btn"><a href="#">X</a></span>');
+
+                        //     closeBtn.on('click', function (e) {
+                        //         $('.shadow').addClass('hidden');
+                        //         e.preventDefault();
+                        //     });
+
+                        //     $('.zoomed-img-wrap').empty().append(closeBtn).append(video);
+
+                        //     $('.shadow').removeClass('hidden');
+                        // });
                     </script>
                     <div class="elaboration">
                         <ol class="elaboration-steps">
@@ -283,11 +332,11 @@
                 <div class="comments-wrap">
                     <h4><i class="fa fa-comments-o" aria-hidden="true"></i> Comentarios <span class="comment-number">(2)</span></h4>
                     <div class="row">
-                            <div class="comment-input col col-sm-10 col-sm-offset-2">
-                                <textarea class="simplebox" name="" id="" cols="" rows="8" placeholder="Escribe un comentario"></textarea>
-                                <a class="btn-basic btn-comment" href="#">Puesto</a>
-                            </div>
-                    </div>                  
+                        <div class="comment-input col col-sm-10 col-sm-offset-2">
+                            <textarea class="simplebox" name="" id="" cols="" rows="8" placeholder="Escribe un comentario"></textarea>
+                            <a class="btn-basic btn-comment" href="#">Puesto</a>
+                        </div>
+                    </div>
                     <ul class="comments">
                         <li class="comment">
                             <div class="comment-wrap">
@@ -302,7 +351,7 @@
                                     <div class="content col col-sm-10">
                                         <div class="comment-header">
                                             <div class="username"><a href="#">Nombre de usuario</a></div>
-                                            <div class="comment-date">26 julio 2017 a 15:53</div>
+                                            <div class="comment-date">27 julio 2017 a 15:53</div>
                                         </div>
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati excepturi error ipsa porro, expedita qui et, asperiores
                                         ipsam quasi, vero ea nisi! Eum, laborum animi quisquam magnam similique optio repellat?
@@ -323,7 +372,7 @@
                                     <div class="content col col-sm-10">
                                         <div class="comment-header">
                                             <div class="username"><a href="#">Nombre de usuario</a></div>
-                                            <div class="comment-date">27 julio 2017 a 13:59</div>
+                                            <div class="comment-date">26 julio 2017 a 13:59</div>
                                         </div>
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat repudiandae accusamus, corporis!
                                     </div>
@@ -376,14 +425,14 @@
     </div>
 
     <script>
-                        $(document).ready(function () {
-                            console.log("haha");
-                            //let a = $('#similar-recipe-1-rating');
-                            $('#similar-recipe-1-rating').rating({ hoverChangeStars: false });
-                            $('#similar-recipe-2-rating').rating({ hoverChangeStars: false });
-                            $('#similar-recipe-3-rating').rating({ hoverChangeStars: false });
+        $(document).ready(function () {
+            console.log("haha");
+            //let a = $('#similar-recipe-1-rating');
+            $('#similar-recipe-1-rating').rating({ hoverChangeStars: false });
+            $('#similar-recipe-2-rating').rating({ hoverChangeStars: false });
+            $('#similar-recipe-3-rating').rating({ hoverChangeStars: false });
 
-                        });
+        });
     </script>
 
     <div class="footer-wrap">
