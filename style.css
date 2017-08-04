@@ -692,13 +692,37 @@ input[type="search"]:focus {
     padding-top: 30px;
 }
 
-.comments-wrap h4 {
+.comments-caret {
+    height: 40px;
+    display: flex; 
+    align-items: center;
+    padding-left: 10px;
     margin-bottom: 15px;
+    cursor: pointer;
 }
 
-.comments-wrap h4 .fa {
+.comments-caret:hover {
+    background: #c1c1bf; /* Old browsers */
+    background: -moz-linear-gradient(left, #c1c1bf 0%, #f2f2f2 89%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #c1c1bf 0%,#f2f2f2 89%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #c1c1bf 0%,#f2f2f2 89%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c1c1bf', endColorstr='#f2f2f2',GradientType=1 ); /* IE6-9 */
+    --border-radius: 3px;
+}
+
+.comments-caret:hover h4 {
+    color: #fff;
+}
+
+.comments-caret h4 .fa-comments-o {
     font-size: 25px;
     margin-right: 5px;
+}
+
+.comments-caret h4 .fa-caret-down, .comments-caret h4 .fa-caret-up {
+    font-size: 22px;
+    margin-left: 20px;
+    font-weight: 700;
 }
 
 .comment-input {

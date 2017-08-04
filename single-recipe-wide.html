@@ -330,56 +330,64 @@
                     </div>
                 </div>
                 <div class="comments-wrap">
-                    <h4><i class="fa fa-comments-o" aria-hidden="true"></i> Comentarios <span class="comment-number">(2)</span></h4>
-                    <div class="row">
-                        <div class="comment-input col col-sm-10 col-sm-offset-2">
-                            <textarea class="simplebox" name="" id="" cols="" rows="8" placeholder="Escribe un comentario"></textarea>
-                            <a class="btn-basic btn-comment" href="#">Puesto</a>
-                        </div>
+                    <div class="comments-caret">
+                        <h4><i class="fa fa-comments-o" aria-hidden="true"></i> Comentarios <span class="comment-number">(2)</span>
+                            <i class="fa fa-caret-down" aria-hidden="true"></i>
+                            <i class="fa fa-caret-up hidden" aria-hidden="true"></i>
+                        </h4>
                     </div>
-                    <ul class="comments">
-                        <li class="comment">
-                            <div class="comment-wrap">
-                                <div class="row">
-                                    <div class="user-wrap col col-sm-2">
-                                        <div class="comment-img-wrap">
-                                            <a href="#">
+                    <div class="comments-main hidden">
+                        <div class="row">
+                            <div class="comment-input col col-sm-10 col-sm-offset-2">
+                                <textarea class="simplebox" name="" id="" cols="" rows="8" placeholder="Escribe un comentario"></textarea>
+                                <a class="btn-basic btn-comment" href="#">Puesto</a>
+                            </div>
+                        </div>
+                        <ul class="comments">
+                            <li class="comment">
+                                <div class="comment-wrap">
+                                    <div class="row">
+                                        <div class="user-wrap col col-sm-2">
+                                            <div class="comment-img-wrap">
+                                                <a href="#">
                                                 <img src="./imgs/comments-user.png" alt="">
                                             </a>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="content col col-sm-10">
-                                        <div class="comment-header">
-                                            <div class="username"><a href="#">Nombre de usuario</a></div>
-                                            <div class="comment-date">27 julio 2017 a 15:53</div>
+                                        <div class="content col col-sm-10">
+                                            <div class="comment-header">
+                                                <div class="username"><a href="#">Nombre de usuario</a></div>
+                                                <div class="comment-date">27 julio 2017 a 15:53</div>
+                                            </div>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati excepturi error ipsa porro, expedita qui et, asperiores
+                                            ipsam quasi, vero ea nisi! Eum, laborum animi quisquam magnam similique optio
+                                            repellat?
                                         </div>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati excepturi error ipsa porro, expedita qui et, asperiores
-                                        ipsam quasi, vero ea nisi! Eum, laborum animi quisquam magnam similique optio repellat?
                                     </div>
                                 </div>
-                            </div>
-                        </li>
-                        <li class="comment">
-                            <div class="comment-wrap">
-                                <div class="row">
-                                    <div class="user-wrap col col-sm-2">
-                                        <div class="comment-img-wrap">
-                                            <a href="#">
+                            </li>
+                            <li class="comment">
+                                <div class="comment-wrap">
+                                    <div class="row">
+                                        <div class="user-wrap col col-sm-2">
+                                            <div class="comment-img-wrap">
+                                                <a href="#">
                                                 <img src="./imgs/user-photo.jpg" alt="">
                                             </a>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="content col col-sm-10">
-                                        <div class="comment-header">
-                                            <div class="username"><a href="#">Nombre de usuario</a></div>
-                                            <div class="comment-date">26 julio 2017 a 13:59</div>
+                                        <div class="content col col-sm-10">
+                                            <div class="comment-header">
+                                                <div class="username"><a href="#">Nombre de usuario</a></div>
+                                                <div class="comment-date">26 julio 2017 a 13:59</div>
+                                            </div>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat repudiandae accusamus, corporis!
                                         </div>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat repudiandae accusamus, corporis!
                                     </div>
                                 </div>
-                            </div>
-                        </li>
-                    </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="similar-recipes-wide">
@@ -432,6 +440,12 @@
             $('#similar-recipe-2-rating').rating({ hoverChangeStars: false });
             $('#similar-recipe-3-rating').rating({ hoverChangeStars: false });
 
+        });
+
+        $('.comments-caret').on('click', function () {
+            $(this).find('.fa-caret-down').toggleClass('hidden');
+            $(this).find('.fa-caret-up').toggleClass('hidden');
+            $(this).siblings('.comments-main').toggleClass('hidden');    
         });
     </script>
 
