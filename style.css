@@ -77,12 +77,19 @@ ul {
     color: #fff;
 }
 
+.visible-on-mobile {
+    display: none;
+}
+
 /* Header */
+.main-header {
+    position: relative;
+}
 
 .top-bar-wrap {
     background-image: url("./imgs/black-background.jpg");
     background-size: cover;
-    height: 64px;
+    height: 67px;
     border-bottom: 3px solid #f03839;
 }
 
@@ -155,6 +162,11 @@ ul {
 
 .navbar .search-wrap-mobile {
     display: none;
+}
+
+.navbar-toggle.left-aligned {
+    float: left !important;
+    margin-left: 15px;
 }
 
 /* Subsribe */
@@ -842,4 +854,70 @@ input[type="search"]:focus {
     margin-top: 20px;
     margin-bottom: 30px;
     color: #d9d9d9;
+}
+
+/* Large */
+@media screen and (max-width: 991px) {
+
+}
+
+/* Medium */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* Small */
+@media screen and (max-width: 767px) {
+    .not-visible-on-mobile {
+        display: none;
+    }
+
+    .visible-on-mobile {
+        display: block;
+    }
+
+    .top-bar-wrap {
+        height: auto;
+    }
+
+    .navbar .navbar-nav li {
+        padding-left: 15px;
+    }
+
+    .navbar .navbar-nav .active a {
+        border-bottom: none;
+    }
+
+    .social-links-mobile-wrap {
+        position: absolute;
+        z-index: 1;
+        top: 77px;
+        right: 10px;
+    }
+
+    .social-media-links a {
+        opacity: 1;
+    }
+
+    
+}
+
+/* Extra small */
+@media screen and (max-width: 575px) {
+    .top-bar-left {
+        font-size: 16px;
+    }
+
+    .top-bar-left .fa {
+        font-size: 16px;
+    }
+
+    .logo {
+        margin-right: 20px;
+        max-height: 64px;
+    }
+
+    .top-bar-right {
+        height: 44px;
+    }
 }
