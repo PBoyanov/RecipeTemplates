@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="kartik-v-bootstrap-star-rating-a779c97/css/star-rating.css" type="text/css" media="all" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-    <link rel="stylesheet" href="./fancybox-3/dist/jquery.fancybox.min.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="fancybox-3/dist/jquery.fancybox.min.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 
@@ -296,10 +296,6 @@
                             </ul>
                         </div>
                     </div>
-                    <!--<div class="shadow hidden">
-                        <div class="zoomed-img-wrap"></div>
-                    </div>-->
-
                     <script>
                         $(document).ready(function () {
                             $('.flexslider').flexslider({
@@ -317,7 +313,6 @@
                             });
 
                             //Fancybox - zoom images
-
                             $("a.elaboration-media").fancybox({
                                 'transitionIn': 'elastic',
                                 'transitionOut': 'elastic',
@@ -331,43 +326,6 @@
                         $("body:not(.navbar-toggler)").on("click", function () {
                             $("#navbar-collapse").collapse("hide");
                         });
-
-
-
-                        // $('.zoomify').on('click', function () {
-                        //     let imgSrc = $(this).attr('src');
-                        //     let imgAlt = $(this).attr('alt');
-                        //     let zoomedImg = $('<img>').attr('src', imgSrc)
-                        //         .attr('alt', imgAlt);
-                        //     let closeBtn = $('<span class="close-btn"><a href="#">X</a></span>');
-
-                        //     closeBtn.on('click', function (e) {
-                        //         $('.shadow').addClass('hidden');
-                        //         e.preventDefault();
-                        //     });
-
-                        //     $('.zoomed-img-wrap').empty().append(closeBtn).append(zoomedImg);
-
-                        //     $('.shadow').removeClass('hidden');
-
-                        // });
-
-                        // Get a reference to the iframe document
-                        // let iframeDoc = $('#player_1').contents().get(0);
-
-                        // $(iframeDoc).bind('click', function( event ) {
-                        //     let video = iframeDoc.css({"width": 400, "height": 300});
-                        //     let closeBtn = $('<span class="close-btn"><a href="#">X</a></span>');
-
-                        //     closeBtn.on('click', function (e) {
-                        //         $('.shadow').addClass('hidden');
-                        //         e.preventDefault();
-                        //     });
-
-                        //     $('.zoomed-img-wrap').empty().append(closeBtn).append(video);
-
-                        //     $('.shadow').removeClass('hidden');
-                        // });
                     </script>
                     <div class="elaboration">
                         <ol class="elaboration-steps">
@@ -449,17 +407,19 @@
                     <div class="row">
                         <div class="recipe col col-sm-4">
                             <div class="recipe-media-wrap">
-                                <iframe src="https://www.youtube.com/embed/oX-TbLA-sMI" frameborder="0" allowfullscreen></iframe>
+                                <a class="similar-recipe-media" data-fancybox data-type="iframe" data-src="https://www.youtube.com/embed/uxoJMnp43OA?autoplay=1">
+                                    <img src="imgs/Capture-9.jpg" alt="video_2" />
+                                </a>
                             </div>
                             <div class="similar-recipe-description-wrap">
-                                <h5><a href="#">Pollo crujiente al horno con queso fundido</a></h5>
+                                <h5><a href="#">Espaguetis con gambas al horno</a></h5>
                                 <input id="similar-recipe-1-rating" name="similar-recipe-1-rating" class="rating rating-loading" data-size="xs" data-min="0"
                                     data-max="5" data-step="0.5" data-show-clear="false" data-show-caption="false">
                             </div>
                         </div>
                         <div class="recipe col col-sm-4">
                             <div class="recipe-media-wrap">
-                                <a href="#" class="darken">
+                                <a href="#" class="similar-recipe-media darken">
                                     <img src="./imgs/Capture-7.jpg" alt="subsrcibe">
                                 </a>
                             </div>
@@ -471,7 +431,9 @@
                         </div>
                         <div class="recipe col col-sm-4">
                             <div class="recipe-media-wrap">
-                                <iframe src="https://www.youtube.com/embed/KZTNb_s4CgM" frameborder="0" allowfullscreen></iframe>
+                                <a class="similar-recipe-media" data-fancybox data-type="iframe" data-src="https://www.youtube.com/embed/KZTNb_s4CgM?autoplay=1">
+                                    <img src="imgs/Capture-11.jpg" alt="video_3" />
+                                </a>
                             </div>
                             <div class="similar-recipe-description-wrap">
                                 <h5><a href="#">Receta Hamburguesa rellena de queso Mozzarella</a></h5>

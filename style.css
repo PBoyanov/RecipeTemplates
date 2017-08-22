@@ -286,7 +286,11 @@ input[type="search"]:focus {
     height: 202px;
 }
 
-.recipe-media-wrap iframe, .recipe-media-wrap img {
+.recipe-media-wrap .recipe-media {
+    cursor: pointer;
+}
+
+.recipe-media-wrap img {
     display: block;
     height: 202px;
     width: 100%;  
@@ -300,11 +304,11 @@ input[type="search"]:focus {
 
 .recipe-media-wrap a.darken img {
     display: block;
-    -webkit-transition: all 0.2s linear;
-    -moz-transition: all 0.2s linear;
-    -ms-transition: all 0.2s linear;
-    -o-transition: all 0.2s linear;
-    transition: all 0.2s linear;
+    -webkit-transition: opacity 0.2s linear;
+    -moz-transition: opacity 0.2s linear;
+    -ms-transition: opacity 0.2s linear;
+    -o-transition: opacity 0.2s linear;
+    transition: opacity 0.2s linear;
 }
 
 .recipe-media-wrap a.darken:hover img {
@@ -843,6 +847,10 @@ input[type="search"]:focus {
     margin-top: 15px;
 }
 
+.similar-recipes-wide .similar-recipe-media {
+    cursor: pointer;
+}
+
 .similar-recipes-wide .similar-recipe-description-wrap {
     padding-bottom: 15px;
     border-bottom: 3px solid #d9d9d9;
@@ -900,6 +908,18 @@ input[type="search"]:focus {
     .subscribe-input-wrap {
         border-right: none;
     }
+
+    .recipe-details h5 {
+        min-height: 60px;
+    }
+
+    .recipe-media-wrap {
+        height: 165px;
+    }
+
+    .recipe-media-wrap img {
+        height: 165px;
+    }
 }
 
 /* Small */
@@ -910,6 +930,10 @@ input[type="search"]:focus {
 
     .visible-on-mobile {
         display: block;
+    }
+
+    h2 {
+        font-size: 25px;
     }
 
     .top-bar-wrap {
@@ -941,7 +965,40 @@ input[type="search"]:focus {
         border-right: none;
     }
 
-    
+    .main {
+        padding: 0 7%;
+        text-align: center;
+    }
+
+    .heading {
+        margin-top: 25px;
+    }
+
+    .recipe-media-wrap {
+        height: auto;
+    }
+
+    .recipe-media-wrap img {
+        height: auto;
+    }
+
+    .recipe-details-list {
+        text-align: start;
+    }
+
+    .recipe-details h5 {
+        height: auto;
+        min-height: initial;
+        padding-top: 20px;
+    }
+
+    .description-short {
+        height: auto;
+    }
+
+    .rating-container {
+        margin-bottom: 8px;
+    }
 }
 
 /* Extra small */
@@ -960,5 +1017,21 @@ input[type="search"]:focus {
 
     .top-bar-right {
         height: 44px;
+    }
+
+    .heading span {
+        padding: 0 65px;
+    }
+
+    .heading span:before, .heading span:after {
+        width: 50px;
+    }
+
+    .footer-links {
+        display: none;
+    }
+
+    .copyright {
+        font-size: 12px;
     }
 }
