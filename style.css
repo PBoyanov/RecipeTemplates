@@ -622,7 +622,8 @@ input[type="search"]:focus {
     padding: 7px;
     text-align: center;
     border-right: 3px solid #d9d9d9;
-    cursor: pointer;
+    font-size: 17px;
+    --cursor: pointer;
 }
 
 .current-recipe .recipe-detail.last {
@@ -635,17 +636,17 @@ input[type="search"]:focus {
     padding-right: 7px;
 }
 
-.current-recipe .recipe-detail:hover {
+/*.current-recipe .recipe-detail:hover {
     background-color: #f03839;
     color: #fff;
 }
 
 .current-recipe .recipe-detail:hover .fa {
     color: #fff;
-}
+}*/
 
 .current-recipe .recipe-detail a:hover .fa {
-    color: #f79b9b;
+    color: #f03839;
     --text-shadow: 1px 1px 1px #777;
     --font-weight: 700;
 }
