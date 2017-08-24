@@ -208,8 +208,6 @@ ul {
     font-weight: 800;
     text-shadow: 0px 1px 2px #777;
     background-color: rgba(240, 56, 57, 0.95);
-    border-left: 1px solid #fff;
-    border-right: 1px solid #fff;
 }
 
 .subscribe-input-wrap input {
@@ -791,6 +789,10 @@ input[type="search"]:focus {
     background-color: #c33031;
 }
 
+.comment-wrap {
+    position: relative;
+}
+
 .comment {
     margin-top: 30px;
 }
@@ -837,6 +839,10 @@ input[type="search"]:focus {
 
 .comment .comment-date {
     font-size: 12px;
+}
+
+.comment-text {
+    text-align: justify;
 }
 
 .similar-recipes-wide {
@@ -968,6 +974,18 @@ input[type="search"]:focus {
     .current-recipe .elaboration {
         margin-top: 45px;
     }
+
+    .comment-input {
+        margin-left: 0;
+    }
+
+    .comment .comment-img-wrap {
+        width: 94px;
+    }
+
+    .comment img {
+        width: 90px;
+    }    
 }
 
 /* Small */
@@ -1005,12 +1023,6 @@ input[type="search"]:focus {
 
     .social-media-links a {
         opacity: 1;
-    }
-
-    .subscribe-input-wrap {
-        border-top: 1px solid #d9d9d9;
-        border-left: none;
-        border-right: none;
     }
 
     .main {
@@ -1121,17 +1133,71 @@ input[type="search"]:focus {
     }
 
     .flexslider .flex-prev {
-        left: 30%;
+        left: 10%;
         background: url(./imgs/home-carousel-arrow-left-small.png) center center no-repeat;
     }
 
     .flexslider .flex-next {
-        right: 30%;
+        right: 10%;
         background: url(./imgs/home-carousel-arrow-right-small.png) center center no-repeat;
+    }
+
+    .current-recipe .elaboration-wrap {
+        padding-bottom: 5px;
+    }
+
+    .current-recipe .elaboration-wrap h4 {
+        text-align: start;
+        padding-top: 30px;
     }
 
     .current-recipe .elaboration {
         margin-top: 11%;
+    }
+
+    .comments-wrap {
+        padding-top: 20px;
+    }
+
+    .comments-caret:hover h4 {
+        color: #f79b9c;
+    }
+
+    .comment-input {
+        margin-left: 0;
+        padding-left: 15px;
+        text-align: end;
+    }
+
+    .comment .user-wrap {
+        position: absolute;
+        top: -4px;
+    }
+
+    .comment .comment-img-wrap {
+        border-bottom: none;
+        width: 66px;
+    }
+
+    .comment img {
+        width: 62px;
+    }
+
+    .comment .comment-header {
+        text-align: end;
+    }
+
+    .similar-recipes-wide {
+        padding-top: 10px;
+    }
+
+    .similar-recipes-wide h3.heading {
+        margin-bottom: 15px;
+    }
+
+    .similar-recipes-wide h5 {
+        min-height: initial;
+        height: auto;
     }
 }
 
