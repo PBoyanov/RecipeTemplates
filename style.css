@@ -177,7 +177,7 @@ ul {
 
 input[type="text"]:focus,
 input[type="search"]:focus {   
-  border-color: rgba(240, 56, 58, 0.6);
+  border-color: rgba(240, 56, 58, 0.4);
 }
 
 .recipe {
